@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="min-height:100px;">    
+        <p>
+            Proin at luctus elit, et vulputate dui. Donec at ligula gravida, molestie odio ut, dapibus ante. 
+            Phasellus volutpat ligula quis eros pretium ornare. 
+            Nunc dapibus nibh sit amet elit porta, eget fringilla mauris molestie. 
+            Morbi rhoncus elit ac efficitur pellentesque. 
+            Nulla tincidunt turpis at massa egestas suscipit.
+        </p>
+    </div>
+    <div>
+        <button type="button" onclick="articleToggle()">button 1</button>
+        <button type="button" onclick="articleToggle()">button 2</button>
+    </div>
+
+    <script>
+    
+        function articleToggle(){
+
+            let p = document.getElementsByTagName("p")[0].style;
+
+            p.display = p.display == 'none' ? 'block' : 'none' ;
+             
+        }
+
+    </script>
+    
+</body>
+</html>
